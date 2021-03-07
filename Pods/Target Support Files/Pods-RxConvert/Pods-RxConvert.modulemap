@@ -1,0 +1,6 @@
+framework module Pods_RxConvert {
+  umbrella header "Pods-RxConvert-umbrella.h"
+
+  export *
+  module * { export * }
+}
