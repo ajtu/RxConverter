@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		80004CBA0D06F770A21997D2 /* Pods_RxConvertTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDA011273504883ECE071AF7 /* Pods_RxConvertTests.framework */; };
-		93D43D6C266AC46FCF5B47F2 /* Pods_RxConvertUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B30F9A1091737ED33B157A77 /* Pods_RxConvertUITests.framework */; };
 		B97C0B519EF9720A2DE9D5D2 /* Pods_RxConvert.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF5B7BAC17D765E7628A9C80 /* Pods_RxConvert.framework */; };
 		C220AFA425F4485300136BBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C220AFA325F4485300136BBA /* AppDelegate.swift */; };
 		C220AFA625F4485300136BBA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C220AFA525F4485300136BBA /* SceneDelegate.swift */; };
@@ -16,17 +14,12 @@
 		C220AFAB25F4485300136BBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C220AFA925F4485300136BBA /* Main.storyboard */; };
 		C220AFAD25F4485400136BBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C220AFAC25F4485400136BBA /* Assets.xcassets */; };
 		C220AFB025F4485400136BBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C220AFAE25F4485400136BBA /* LaunchScreen.storyboard */; };
+		C294605025F50048000EE0B4 /* RxConvert_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C294604F25F50048000EE0B4 /* RxConvert_UITests.swift */; };
+		C294605A25F5009E000EE0B4 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C294605925F5009E000EE0B4 /* SnapshotHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C220AFB725F4485400136BBA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C220AF9825F4485300136BBA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C220AF9F25F4485300136BBA;
-			remoteInfo = RxConvert;
-		};
-		C220AFC225F4485400136BBA /* PBXContainerItemProxy */ = {
+		C294605225F50048000EE0B4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C220AF9825F4485300136BBA /* Project object */;
 			proxyType = 1;
@@ -50,8 +43,10 @@
 		C220AFAC25F4485400136BBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C220AFAF25F4485400136BBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C220AFB125F4485400136BBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C220AFB625F4485400136BBA /* RxConvertTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxConvertTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C220AFC125F4485400136BBA /* RxConvertUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxConvertUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C294604D25F50048000EE0B4 /* RxConvert UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RxConvert UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C294604F25F50048000EE0B4 /* RxConvert_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxConvert_UITests.swift; sourceTree = "<group>"; };
+		C294605125F50048000EE0B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C294605925F5009E000EE0B4 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
 		D50C9CC7FD87437500FB5569 /* Pods-RxConvertTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxConvertTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxConvertTests/Pods-RxConvertTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DF5B7BAC17D765E7628A9C80 /* Pods_RxConvert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxConvert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDA011273504883ECE071AF7 /* Pods_RxConvertTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxConvertTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,19 +61,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C220AFB325F4485400136BBA /* Frameworks */ = {
+		C294604A25F50048000EE0B4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80004CBA0D06F770A21997D2 /* Pods_RxConvertTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C220AFBE25F4485400136BBA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				93D43D6C266AC46FCF5B47F2 /* Pods_RxConvertUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				C220AFA225F4485300136BBA /* RxConvert */,
+				C294604E25F50048000EE0B4 /* RxConvert UITests */,
 				C220AFA125F4485300136BBA /* Products */,
 				E1B22470E3E0C10BC02B1E86 /* Pods */,
 				FB7B747EC0981278BECBB97F /* Frameworks */,
@@ -99,8 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				C220AFA025F4485300136BBA /* RxConvert.app */,
-				C220AFB625F4485400136BBA /* RxConvertTests.xctest */,
-				C220AFC125F4485400136BBA /* RxConvertUITests.xctest */,
+				C294604D25F50048000EE0B4 /* RxConvert UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -117,6 +103,16 @@
 				C220AFB125F4485400136BBA /* Info.plist */,
 			);
 			path = RxConvert;
+			sourceTree = "<group>";
+		};
+		C294604E25F50048000EE0B4 /* RxConvert UITests */ = {
+			isa = PBXGroup;
+			children = (
+				C294604F25F50048000EE0B4 /* RxConvert_UITests.swift */,
+				C294605925F5009E000EE0B4 /* SnapshotHelper.swift */,
+				C294605125F50048000EE0B4 /* Info.plist */,
+			);
+			path = "RxConvert UITests";
 			sourceTree = "<group>";
 		};
 		E1B22470E3E0C10BC02B1E86 /* Pods */ = {
@@ -165,46 +161,22 @@
 			productReference = C220AFA025F4485300136BBA /* RxConvert.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C220AFB525F4485400136BBA /* RxConvertTests */ = {
+		C294604C25F50048000EE0B4 /* RxConvert UITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C220AFCD25F4485400136BBA /* Build configuration list for PBXNativeTarget "RxConvertTests" */;
+			buildConfigurationList = C294605425F50048000EE0B4 /* Build configuration list for PBXNativeTarget "RxConvert UITests" */;
 			buildPhases = (
-				A2209A6F50135B5BB006EC04 /* [CP] Check Pods Manifest.lock */,
-				C220AFB225F4485400136BBA /* Sources */,
-				C220AFB325F4485400136BBA /* Frameworks */,
-				C220AFB425F4485400136BBA /* Resources */,
-				31DC8DA32DA1226E330CBA4A /* [CP] Embed Pods Frameworks */,
-				1B1BC3ABCAA7A3C3A29A98F0 /* [CP] Copy Pods Resources */,
+				C294604925F50048000EE0B4 /* Sources */,
+				C294604A25F50048000EE0B4 /* Frameworks */,
+				C294604B25F50048000EE0B4 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C220AFB825F4485400136BBA /* PBXTargetDependency */,
+				C294605325F50048000EE0B4 /* PBXTargetDependency */,
 			);
-			name = RxConvertTests;
-			productName = RxConvertTests;
-			productReference = C220AFB625F4485400136BBA /* RxConvertTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		C220AFC025F4485400136BBA /* RxConvertUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C220AFD025F4485400136BBA /* Build configuration list for PBXNativeTarget "RxConvertUITests" */;
-			buildPhases = (
-				9C94DC9511DDEC7E54A4247B /* [CP] Check Pods Manifest.lock */,
-				C220AFBD25F4485400136BBA /* Sources */,
-				C220AFBE25F4485400136BBA /* Frameworks */,
-				C220AFBF25F4485400136BBA /* Resources */,
-				FD2B8499E6749E1116533D5E /* [CP] Embed Pods Frameworks */,
-				F18D6EFBAAA40F38E4EED8DC /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C220AFC325F4485400136BBA /* PBXTargetDependency */,
-			);
-			name = RxConvertUITests;
-			productName = RxConvertUITests;
-			productReference = C220AFC125F4485400136BBA /* RxConvertUITests.xctest */;
+			name = "RxConvert UITests";
+			productName = "RxConvert UITests";
+			productReference = C294604D25F50048000EE0B4 /* RxConvert UITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -220,12 +192,7 @@
 						CreatedOnToolsVersion = 12.4;
 						ProvisioningStyle = Automatic;
 					};
-					C220AFB525F4485400136BBA = {
-						CreatedOnToolsVersion = 12.4;
-						ProvisioningStyle = Automatic;
-						TestTargetID = C220AF9F25F4485300136BBA;
-					};
-					C220AFC025F4485400136BBA = {
+					C294604C25F50048000EE0B4 = {
 						CreatedOnToolsVersion = 12.4;
 						ProvisioningStyle = Automatic;
 						TestTargetID = C220AF9F25F4485300136BBA;
@@ -246,8 +213,7 @@
 			projectRoot = "";
 			targets = (
 				C220AF9F25F4485300136BBA /* RxConvert */,
-				C220AFB525F4485400136BBA /* RxConvertTests */,
-				C220AFC025F4485400136BBA /* RxConvertUITests */,
+				C294604C25F50048000EE0B4 /* RxConvert UITests */,
 			);
 		};
 /* End PBXProject section */
@@ -263,14 +229,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C220AFB425F4485400136BBA /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C220AFBF25F4485400136BBA /* Resources */ = {
+		C294604B25F50048000EE0B4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -297,88 +256,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxConvert/Pods-RxConvert-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		1B1BC3ABCAA7A3C3A29A98F0 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxConvertTests/Pods-RxConvertTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		31DC8DA32DA1226E330CBA4A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxConvertTests/Pods-RxConvertTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9C94DC9511DDEC7E54A4247B /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RxConvertUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A2209A6F50135B5BB006EC04 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RxConvertTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BB58390DB32416B0B933B03C /* [CP] Check Pods Manifest.lock */ = {
@@ -429,44 +306,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxConvert/Pods-RxConvert-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F18D6EFBAAA40F38E4EED8DC /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxConvertUITests/Pods-RxConvertUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FD2B8499E6749E1116533D5E /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxConvertUITests/Pods-RxConvertUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -480,32 +319,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C220AFB225F4485400136BBA /* Sources */ = {
+		C294604925F50048000EE0B4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C220AFBD25F4485400136BBA /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				C294605025F50048000EE0B4 /* RxConvert_UITests.swift in Sources */,
+				C294605A25F5009E000EE0B4 /* SnapshotHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		C220AFB825F4485400136BBA /* PBXTargetDependency */ = {
+		C294605325F50048000EE0B4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = C220AF9F25F4485300136BBA /* RxConvert */;
-			targetProxy = C220AFB725F4485400136BBA /* PBXContainerItemProxy */;
-		};
-		C220AFC325F4485400136BBA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C220AF9F25F4485300136BBA /* RxConvert */;
-			targetProxy = C220AFC225F4485400136BBA /* PBXContainerItemProxy */;
+			targetProxy = C294605225F50048000EE0B4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -652,7 +481,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 12;
 				DEVELOPMENT_TEAM = E64ACFS2Y6;
 				INFOPLIST_FILE = RxConvert/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -674,7 +503,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 12;
 				DEVELOPMENT_TEAM = E64ACFS2Y6;
 				INFOPLIST_FILE = RxConvert/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -689,66 +518,18 @@
 			};
 			name = Release;
 		};
-		C220AFCE25F4485400136BBA /* Debug */ = {
+		C294605525F50048000EE0B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D50C9CC7FD87437500FB5569 /* Pods-RxConvertTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E64ACFS2Y6;
-				INFOPLIST_FILE = RxConvertTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				INFOPLIST_FILE = "RxConvert UITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.alvinapp.RxConvertTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RxConvert.app/RxConvert";
-			};
-			name = Debug;
-		};
-		C220AFCF25F4485400136BBA /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6B427DCAEB5DB1E520AA8D5A /* Pods-RxConvertTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = E64ACFS2Y6;
-				INFOPLIST_FILE = RxConvertTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.alvinapp.RxConvertTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RxConvert.app/RxConvert";
-			};
-			name = Release;
-		};
-		C220AFD125F4485400136BBA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 14EC19804679A8BAAFCA7E27 /* Pods-RxConvertUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = E64ACFS2Y6;
-				INFOPLIST_FILE = RxConvertUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.alvinapp.RxConvertUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alvinapp.RxConvert-UITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -756,20 +537,18 @@
 			};
 			name = Debug;
 		};
-		C220AFD225F4485400136BBA /* Release */ = {
+		C294605625F50048000EE0B4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BE707ECE018EE42362F51323 /* Pods-RxConvertUITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E64ACFS2Y6;
-				INFOPLIST_FILE = RxConvertUITests/Info.plist;
+				INFOPLIST_FILE = "RxConvert UITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.alvinapp.RxConvertUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alvinapp.RxConvert-UITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -798,20 +577,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C220AFCD25F4485400136BBA /* Build configuration list for PBXNativeTarget "RxConvertTests" */ = {
+		C294605425F50048000EE0B4 /* Build configuration list for PBXNativeTarget "RxConvert UITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C220AFCE25F4485400136BBA /* Debug */,
-				C220AFCF25F4485400136BBA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C220AFD025F4485400136BBA /* Build configuration list for PBXNativeTarget "RxConvertUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C220AFD125F4485400136BBA /* Debug */,
-				C220AFD225F4485400136BBA /* Release */,
+				C294605525F50048000EE0B4 /* Debug */,
+				C294605625F50048000EE0B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

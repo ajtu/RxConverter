@@ -38,7 +38,21 @@ platform :ios do
     deliver
   end
 
+  desc "Take screenshots"
+  lane :screenshot do
+    snapshot
+  end
 
+  desc "Send Privacy Details"
+  lane :privacydetails do
+    upload_app_privacy_details_to_app_store(
+    username: "tu.alvinj@gmail.com",
+    team_name: "Alvin Tu",
+    app_identifier: "com.alvinapp.RxConvert"
+  )
+  end
 
+  
+  
 
 end

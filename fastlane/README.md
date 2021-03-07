@@ -31,6 +31,16 @@ Create IPA
 fastlane ios upload
 ```
 Upload to App Store
+### ios screenshot
+```
+fastlane ios screenshot
+```
+Take screenshots
+### ios privacydetails
+```
+fastlane ios privacydetails
+```
+Send Privacy Details
 
 ----
 

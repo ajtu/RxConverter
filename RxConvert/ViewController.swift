@@ -18,6 +18,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        poundsTextField.keyboardType = .numberPad
+        kilogramsTextField.keyboardType = .numberPad
         setUpPoundObserver()
         setUpKilogramObserver()
     }
@@ -30,7 +32,7 @@ private extension ViewController {
             .subscribe(onNext: { [unowned self] in
                 if let text = self.poundsTextField.text {
                     if let floatValue = Float(text) {
-                        let value = floatValue * 0.453592379
+                        let value = floatValue * 0.45
                         self.kilogramsTextField.text = "\(value)"
                     }
                 }
@@ -44,7 +46,7 @@ private extension ViewController {
             .subscribe(onNext: { [unowned self] in
                 if let text = self.kilogramsTextField.text {
                     if let floatValue = Float(text) {
-                        let value = floatValue * 2.204622
+                        let value = floatValue * 2.204
                         self.poundsTextField.text = "\(value)"
                     }
                 }

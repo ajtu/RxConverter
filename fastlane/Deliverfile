@@ -12,8 +12,9 @@ submission_information({
     add_id_info_tracks_install: true,
 
 })
+
 # 3
-# app_rating_config_path("./fastlane/metadata/app_store_rating_config.json")
+app_rating_config_path("./fastlane/metadata/app_store_rating_config.json")
 # 4
 ipa("./fastlane/builds/RxConvert.ipa”)
 # 5
