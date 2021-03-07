@@ -218,13 +218,16 @@
 				TargetAttributes = {
 					C220AF9F25F4485300136BBA = {
 						CreatedOnToolsVersion = 12.4;
+						ProvisioningStyle = Automatic;
 					};
 					C220AFB525F4485400136BBA = {
 						CreatedOnToolsVersion = 12.4;
+						ProvisioningStyle = Automatic;
 						TestTargetID = C220AF9F25F4485300136BBA;
 					};
 					C220AFC025F4485400136BBA = {
 						CreatedOnToolsVersion = 12.4;
+						ProvisioningStyle = Automatic;
 						TestTargetID = C220AF9F25F4485300136BBA;
 					};
 				};
@@ -649,6 +652,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = E64ACFS2Y6;
 				INFOPLIST_FILE = RxConvert/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -659,6 +663,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
@@ -669,6 +674,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = E64ACFS2Y6;
 				INFOPLIST_FILE = RxConvert/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -679,6 +685,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};
