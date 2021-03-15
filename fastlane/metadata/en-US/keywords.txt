@@ -1,1 +1,1 @@
-Converter, convert, pounds, kilograms, pound, kilogram, lb, kg, lbs, kgs
+convert,pound,kilogram,lb,kg,lbs,kgs,kg converter,weight converter, lbs to kg,kg calculator, fitness

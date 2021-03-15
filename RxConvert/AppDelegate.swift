@@ -6,6 +6,10 @@
 //
 
 import UIKit
+import StoreKit
+
+
+
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -13,8 +17,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        let shortestTime: UInt32 = 25
+        let longestTime: UInt32 = 200
+        guard let timeInterval = TimeInterval(exactly: arc4random_uniform(longestTime - shortestTime) + shortestTime) else { return true }
+
+        Timer.scheduledTimer(timeInterval: timeInterval, target: self, selector: #selector(AppDelegate.requestReview), userInfo: nil, repeats: false)
+
         // Override point for customization after application launch.
         return true
+    }
+    
+    
+    @objc func requestReview() {
+        SKStoreReviewController.requestReview()
     }
 
     // MARK: UISceneSession Lifecycle
